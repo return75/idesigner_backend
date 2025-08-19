@@ -10,7 +10,9 @@ return new class extends Migration
     {
         Schema::create('sizes', function (Blueprint $table) {
             $table->id();
-            $table->string('name'); // مثلا cotton, polyester, wool
+            $table->string('code', 10);
+            $table->string('name_en');
+            $table->string('name_fa');
             $table->timestamps();
         });
     }

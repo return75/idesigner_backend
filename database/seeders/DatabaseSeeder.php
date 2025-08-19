@@ -16,8 +16,16 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'Alireza',
+            'email' => 'atashfaraz8@gmail.com',
+        ]);
+
+        DB::table('sizes')->insert([
+            ['code' => 'XS', 'name_en' => 'Extra Small', 'name_fa' => 'خیلی کوچک'],
+            ['code' => 'S',  'name_en' => 'Small',       'name_fa' => 'کوچک'],
+            ['code' => 'M',  'name_en' => 'Medium',      'name_fa' => 'متوسط'],
+            ['code' => 'L',  'name_en' => 'Large',       'name_fa' => 'بزرگ'],
+            ['code' => 'XL', 'name_en' => 'Extra Large', 'name_fa' => 'خیلی بزرگ'],
         ]);
     }
 }
