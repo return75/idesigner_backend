@@ -10,7 +10,7 @@ class TShirtVariant extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['tshirt_id', 'color_id', 'size_id', 'image'];
+    protected $fillable = ['tshirt_id', 'color_id', 'material_id', 'size_id', 'image'];
 
     public function tshirt()
     {
