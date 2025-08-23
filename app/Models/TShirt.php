@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Models;
-use App\Models\Material;
-use App\Models\TShirtVariant;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Tshirt extends Model
 {

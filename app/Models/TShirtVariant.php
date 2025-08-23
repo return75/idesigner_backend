@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class TShirtVariant extends Model
 {
+    protected $table = 'tshirt_variants';
+
     use HasFactory;
 
     protected $fillable = ['tshirt_id', 'color_id', 'material_id', 'size_id', 'image'];
