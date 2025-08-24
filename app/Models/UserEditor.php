@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Models;
+use Illuminate\Database\Eloquent\Model;
 
 class UserEditor extends Model
 {
-    use HasFactory;
+    protected $table = 'user_editor';
 
     protected $fillable = ['user_id', 'tshirt_variant_id', 'editor_data'];
 

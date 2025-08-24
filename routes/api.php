@@ -5,6 +5,7 @@ use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\TShirtController;
 use App\Http\Controllers\Api\TShirtVariantController;
+use App\Http\Controllers\Api\UserEditorController;
 use App\Http\Controllers\Api\MaterialController;
 use App\Http\Controllers\Api\ColorController;
 use App\Http\Controllers\Api\SizeController;
@@ -27,3 +28,6 @@ Route::post('/tshirts/{tshirt}/variants', [TShirtVariantController::class, 'stor
 Route::get('/materials', [MaterialController::class, 'index']);
 Route::get('/colors', [ColorController::class, 'index']);
 Route::get('/sizes', [SizeController::class, 'index']);
+
+
+Route::post('/user-editor', [UserEditorController::class, 'store']);

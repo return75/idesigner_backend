@@ -10,13 +10,7 @@ class TshirtVariantController extends Controller
 {
     public function show($id)
     {
-        $tshirt = TShirt::with([
-            'variants.color',
-            'variants.material',
-            'variants.size'
-        ])->findOrFail($id);
 
-        return response()->json($tshirt);
     }
 
     public function store(Request $request, Tshirt $tshirt)
