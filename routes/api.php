@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\TShirtController;
 use App\Http\Controllers\Api\MaterialController;
 use App\Http\Controllers\Api\ColorController;
+use App\Http\Controllers\Api\SizeController;
 
 
 Route::get('/users', [UserController::class, 'index']);
@@ -22,3 +23,4 @@ Route::get('/tshirts', [TShirtController::class, 'index']);
 
 Route::get('/materials', [MaterialController::class, 'index']);
 Route::get('/colors', [ColorController::class, 'index']);
+Route::get('/sizes', [SizeController::class, 'index']);

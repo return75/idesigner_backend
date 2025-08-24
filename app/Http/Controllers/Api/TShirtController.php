@@ -20,12 +20,12 @@ class TShirtController extends Controller
 
     public function index()
     {
-        $tshirt = TShirt::with([
+        $tshirts = TShirt::with([
             'variants.color',
             'variants.material',
             'variants.size'
         ])->get();
 
-        return response()->json($tshirt);
+        return response()->json($tshirts);
     }
 }

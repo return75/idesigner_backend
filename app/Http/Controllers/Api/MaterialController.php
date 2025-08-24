@@ -10,8 +10,8 @@ class MaterialController extends Controller
 
     public function index()
     {
-        $material = Material::get();
+        $materials = Material::all();
 
-        return response()->json($material);
+        return response()->json($materials);
     }
 }
