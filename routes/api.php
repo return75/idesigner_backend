@@ -19,6 +19,7 @@ Route::middleware('auth:api')->get('/me', [AuthController::class, 'me']);
 
 Route::get('/tshirts/{id}', [TShirtController::class, 'show']);
 Route::get('/tshirts', [TShirtController::class, 'index']);
+Route::post('/tshirt', [TshirtController::class, 'store']);
 
 
 Route::get('/materials', [MaterialController::class, 'index']);
