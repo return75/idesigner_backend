@@ -17,4 +17,15 @@ class TShirtController extends Controller
 
         return response()->json($tshirt);
     }
+
+    public function index()
+    {
+        $tshirt = TShirt::with([
+            'variants.color',
+            'variants.material',
+            'variants.size'
+        ])->get();
+
+        return response()->json($tshirt);
+    }
 }
